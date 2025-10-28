@@ -1,6 +1,8 @@
  #include<stdio.h>
  int main(){
    int n=0;
+  int x;
+  scanf("%d",&x);
     if(x<0){
       if(x==-2147483648){
         return 0;
