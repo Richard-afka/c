@@ -27,4 +27,5 @@
   }else{
     printf("%lld\n",h);
   }
+  return 0;
 }
