@@ -24,7 +24,7 @@ int main(){
     struct student student[CSIZE];
     for(int i=0;i<CSIZE;i++){
         printf("请输入学生姓名：\n");
-        scanf("%s %s",&student[i].a.fname,&student[i].a.lname);
+        scanf("%s %s",student[i].a.fname,student[i].a.lname);
         printf("请输入分数：\n");
         for(int j=0;j<3;j++){
             scanf("%lf",&student[i].grade[j]);
@@ -39,7 +39,7 @@ int main(){
         }
         sum+=count;
         student[i].aver=count/3.0;
-        printf("第%d名学生平均分为：\n%lf\n",i+1,student[i].aver);
+        printf("第%d名学生平均分为:\n%lf\n",i+1,student[i].aver);
     }
     prints(student,CSIZE);
     ave=sum/12.0;
